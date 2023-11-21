@@ -2,12 +2,13 @@
 import { useState } from "react";
 import "./Home.css";
 import sampleData from "../samples/gloats-data.json";
-import Card from "../components/Card";
+import GloatCard from "../components/GloatCard";
 import CreateGloatButton from "../components/CreateGloatButton";
 import CreateGloatModal from "../components/CreateGloatModal";
+import ViewGloatModal from "../components/ViewGloatModal";
 import { v4 as uuidv4 } from "uuid";
 
-interface Gloat {
+export interface IGloat {
   author: string;
   creationDate: string;
   text: string;
@@ -15,22 +16,23 @@ interface Gloat {
 }
 
 const Home = () => {
-  const [gloats, setGloats] = useState<Gloat[]>(sampleData);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [gloats, setGloats] = useState<IGloat[]>(sampleData);
+  const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
+  const [selectedGloat, setSelectedGloat] = useState<IGloat | null>(null);
 
   const handleCreateGloat = () => {
-    setIsModalOpen(true);
+    setIsCreateModalOpen(true);
   };
 
   const handleCloseModal = () => {
-    setIsModalOpen(false);
+    setIsCreateModalOpen(false);
   };
 
-  function handleDeleteGloat(id: string) {
+  const handleDeleteGloat = (id: string) => {
     setGloats(gloats.filter((gloat) => gloat.id !== id));
-  }
+  };
 
-  function addGloat(name: string, text: string) {
+  const addGloat = (name: string, text: string) => {
     const newGloat = {
       author: name,
       creationDate: new Date().toLocaleDateString("en-US"),
@@ -38,7 +40,11 @@ const Home = () => {
       id: uuidv4(),
     };
     setGloats([newGloat, ...gloats]);
-  }
+  };
+
+  const onSelectGloat = (id: string) => {
+    setSelectedGloat(gloats.find((gloat) => gloat.id === id) || null);
+  };
 
   return (
     <div className="home">
@@ -47,18 +53,25 @@ const Home = () => {
       <div className="card-container">
         {gloats.map((card, idx) => {
           return (
-            <Card
+            <GloatCard
               key={idx}
               username={card.author}
               date={card.creationDate}
               blurb={card.text}
               onDelete={() => handleDeleteGloat(card.id)}
+              onView={() => onSelectGloat(card.id)}
             />
           );
         })}
       </div>
-      {isModalOpen && (
+      {isCreateModalOpen && (
         <CreateGloatModal addGloat={addGloat} onClose={handleCloseModal} />
+      )}
+      {selectedGloat && (
+        <ViewGloatModal
+          gloat={selectedGloat}
+          onClose={() => setSelectedGloat(null)}
+        />
       )}
     </div>
   );
