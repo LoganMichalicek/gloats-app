@@ -1,22 +1,15 @@
-import { useState } from 'react';
-import './CreateGloatButton.css';
-import CreateGloatModal from './CreateGloatModal';
+import "./CreateGloatButton.css";
 
-const NewGloatButton = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+interface CreateGloatButtonProps {
+  onClick: () => void;
+}
 
-  const handleCreateGloat = () => {
-    setIsModalOpen(true);
-  }
-
+const CreateGloatButton = ({ onClick }: CreateGloatButtonProps) => {
   return (
-    <>
-      <button className="new-gloat-button" onClick={handleCreateGloat}>
-        Create New Gloat
-      </button>
-      {isModalOpen && <CreateGloatModal onClose={() => setIsModalOpen(false)} />}
-    </>
+    <button className="create-gloat-button" onClick={onClick}>
+      Create New Gloat
+    </button>
   );
 };
 
-export default NewGloatButton;
+export default CreateGloatButton;

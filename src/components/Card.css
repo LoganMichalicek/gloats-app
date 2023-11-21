@@ -1,16 +1,33 @@
+/* Card.css */
 .card {
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
   margin: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  transition: transform 0.2s ease-in-out; /* Add a subtle transition effect */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Enlarge the card on hover */
+}
+
+.delete-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ff6347; /* Tomato color for the delete button, you can adjust the color */
 }
 
 .username {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: #333;
 }
 
 .date {
