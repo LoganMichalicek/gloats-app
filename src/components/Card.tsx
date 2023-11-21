@@ -1,5 +1,4 @@
-// import React from 'react';
-import './Card.css'; // Replace with the correct path to your CSS file
+import "./Card.css";
 
 interface CardProps {
   username: string;
@@ -8,7 +7,7 @@ interface CardProps {
   onDelete: () => void;
 }
 
-const Card = ({username, date, blurb, onDelete}: CardProps) => {
+const Card = ({ username, date, blurb, onDelete }: CardProps) => {
   return (
     <div className="card">
       <div className="delete-button" onClick={onDelete}>
