@@ -1,0 +1,14 @@
+/* NewGloatButton.css */
+.create-gloat-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-gloat-button:hover {
+  background-color: #45a049;
+}

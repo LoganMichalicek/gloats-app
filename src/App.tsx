@@ -1,10 +1,11 @@
 import './App.css'
+import Home from './containers/Home'
 
 function App() {
 
   return (
     <>
-      <h1>Gloats App</h1>
+      <Home />
     </>
   )
 }

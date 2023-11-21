@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "author": "John",
+    "creationDate": "2022-09-01",
+    "text": "I just built my first house!"
+  },
+  {
+    "id": "2",
+    "author": "Alice",
+    "creationDate": "2022-09-02",
+    "text": "I won the marathon!"
+  },
+  {
+    "id": "3",
+    "author": "Bob",
+    "creationDate": "2022-09-03",
+    "text": "I got promoted to manager!"
+  },
+  {
+    "id": "4",
+    "author": "Sarah",
+    "creationDate": "2022-09-04",
+    "text": "I adopted a puppy!"
+  },
+  {
+    "id": "5",
+    "author": "Michael",
+    "creationDate": "2022-09-05",
+    "text": "I finished reading a book!"
+  },
+  {
+    "id": "6",
+    "author": "Emily",
+    "creationDate": "2022-09-06",
+    "text": "I learned a new programming language!"
+  },
+  {
+    "id": "7",
+    "author": "David",
+    "creationDate": "2022-09-07",
+    "text": "I ran a marathon!"
+  },
+  {
+    "id": "8",
+    "author": "Jessica",
+    "creationDate": "2022-09-08",
+    "text": "I got a promotion at work!"
+  },
+  {
+    "id": "9",
+    "author": "Alex",
+    "creationDate": "2022-09-09",
+    "text": "I traveled to a new country!"
+  },
+  {
+    "id": "10",
+    "author": "Sophia",
+    "creationDate": "2022-09-10",
+    "text": "I completed a coding project!"
+  },
+  {
+    "id": "11",
+    "author": "Daniel",
+    "creationDate": "2022-09-11",
+    "text": "I won a photography contest!"
+  },
+  {
+    "id": "12",
+    "author": "Olivia",
+    "creationDate": "2022-09-12",
+    "text": "I started a new job!"
+  },
+  {
+    "id": "13",
+    "author": "William",
+    "creationDate": "2022-09-13",
+    "text": "I graduated from college!"
+  },
+  {
+    "id": "14",
+    "author": "Ava",
+    "creationDate": "2022-09-14",
+    "text": "I published my first book!"
+  },
+  {
+    "id": "15",
+    "author": "James",
+    "creationDate": "2022-09-15",
+    "text": "I climbed Mount Everest!"
+  },
+  {
+    "id": "16",
+    "author": "Mia",
+    "creationDate": "2022-09-16",
+    "text": "I started a successful business!"
+  },
+  {
+    "id": "17",
+    "author": "Benjamin",
+    "creationDate": "2022-09-17",
+    "text": "I won a chess tournament!"
+  },
+  {
+    "id": "18",
+    "author": "Charlotte",
+    "creationDate": "2022-09-18",
+    "text": "I became a certified yoga instructor!"
+  },
+  {
+    "id": "19",
+    "author": "Henry",
+    "creationDate": "2022-09-19",
+    "text": "I bought my dream car!"
+  },
+  {
+    "id": "20",
+    "author": "Ella",
+    "creationDate": "2022-09-20",
+    "text": "I completed a marathon!"
+  },
+  {
+    "id": "21",
+    "author": "Alexander",
+    "creationDate": "2022-09-21",
+    "text": "I learned to play a musical instrument!"
+  },
+  {
+    "id": "22",
+    "author": "Sofia",
+    "creationDate": "2022-09-22",
+    "text": "I won a coding competition!"
+  }
+]
